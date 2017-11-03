@@ -1,0 +1,6 @@
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\bin\Debug\Tennis.exe.config
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\bin\Debug\Tennis.exe
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\bin\Debug\Tennis.pdb
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\obj\Debug\Tennis.csprojResolveAssemblyReference.cache
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\obj\Debug\Tennis.exe
+c:\users\kevin.lin21\documents\visual studio 2017\Projects\Tennis\Tennis\obj\Debug\Tennis.pdb
