@@ -15,33 +15,39 @@ namespace Tennis
         private static bool isDeuce = false;
         static void Main(string[] args)
         {
-            while (true) {
+            while (true)
+            {
                 printScore();
                 //check which player score here p1 or p2
                 p1.AddScore();
                 setAdvantagePlayer();
                 checkDeuce();
-                isGotWinner();
-                break;
+                if (isGotWinner())
+                    break;
             }
+            Console.WriteLine(AdvantagePlayer.Name + " is the winner.");
         }
 
-        static void printScore() {
+        static void printScore()
+        {
             Console.WriteLine(p1.Name + " " + p1.GetScoreName() + " - " + p2.GetScoreName() + " " + p2.Name);
         }
 
-        static void checkDeuce() {
+        static void checkDeuce()
+        {
             isDeuce = p1.Index == p2.Index && p1.Index >= 2;
         }
 
-        static void setAdvantagePlayer() {
+        static void setAdvantagePlayer()
+        {
             AdvantagePlayer = p1.Index > p2.Index ? p1 : p2;
         }
 
-        static bool isGotWinner() {
+        static bool isGotWinner()
+        {
             if (isDeuce)
                 return false;
-            return ((p1.Index - p2.Index >=2 && AdvantagePlayer.Name == p1.Name) || (p2.Index - p1.Index >= 2 && AdvantagePlayer.Name == p2.Name));
+            return ((p1.Index - p2.Index >= 2 && AdvantagePlayer.Name == p1.Name) || (p2.Index - p1.Index >= 2 && AdvantagePlayer.Name == p2.Name));
         }
     }
 }
